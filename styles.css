@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 88px 0;
+}
+
+.text__purple {
+  color: #6415ff;
+}
+/* NAVBAR */
+
+.nav__container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 24px;
+  margin: 0 auto;
+  color: #243e63;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__text {
+  margin-left: 8px;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.nav__links {
+  display: flex;
+  font-weight: 500;
+}
+
+.nav__link {
+  margin: 0 24px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.nav__link--sign-up {
+  margin: 0 24px 0 48px;
+}
+
+.nav__link--primary {
+  background-color: #6415ff;
+  padding: 12px 32px;
+  border-radius: 25px;
+  font-weight: 600;
+  color: white;
+  margin-left: 24px;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* HERO */
+
+.row__hero {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 24px;
+}
+
+.hero__content--left {
+  width: 40%;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+.hero__content--para {
+  font-size: 18px;
+  margin: 32px 0;
+}
+
+.hero__cta {
+  border: 2px solid rgba(180, 180, 180, 0.271);
+  border-radius: 50px;
+  width: 100%;
+  padding: 4px 4px 4px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(180, 180, 180, 0.271);
+}
+
+.hero__email--input {
+  border: rgba(180, 180, 180, 0);
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(180, 180, 180, 0.271);
+}
+
+.cta__btn {
+  background-color: #6415ff;
+  padding: 16px 32px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  border: none;
+}
+
+.hero__credit {
+  margin-top: 80px;
+}
+
+.hero__credit--para {
+  font-size: 12px;
+  color: #a0aec0;
+  font-weight: 600;
+}
+
+.hero__logo--strip {
+  width: 100%;
+  padding-right: 4rem;
+  margin: 16px 0 0 0;
+}
+
+.hero__content--right {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero__img {
+  width: 100%;
+  max-width: 600px;
+}
