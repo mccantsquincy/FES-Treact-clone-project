@@ -11,7 +11,13 @@ a {
 }
 
 .container {
-  margin: 88px 0;
+  padding: 96px 0;
+}
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .text__purple {
@@ -146,4 +152,148 @@ h1 {
 .hero__img {
   width: 100%;
   max-width: 600px;
+}
+
+/* FEATURES SECTION */
+
+.features__container {
+  padding: 96px 0;
+  margin: 0 206px;
+}
+
+.features__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.features__span {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.5;
+}
+
+.features__description--headline {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 24px 0;
+  color: #243e63;
+}
+
+.features__description--para {
+  color: #7c8ba1;
+  font-weight: 500;
+  max-width: 550px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.features__description__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.features__description__card {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: row;
+  padding: 32px 16px;
+}
+
+.image__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #b8b7b75f;
+  padding: 32px;
+  border-radius: 100px;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+}
+
+.features__description-content {
+  margin-left: 16px;
+}
+
+.content__title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #243e63;
+}
+
+.content__para {
+  max-width: 200px;
+  margin-top: 16px;
+  color: #7c8ba1;
+  font-weight: 500;
+  line-height: 2;
+}
+
+/* QUALITY WORK SECTION */
+
+.qw__description__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.qw__description-left {
+  width: 45%;
+  padding: 32px 0;
+}
+
+.qw__img-right {
+  width: 55%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.qw__img {
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid #c7c7c764;
+}
+
+.qw__description--headline {
+  font-size: 50px;
+}
+
+.qw__description--para {
+  color: #7c8ba1;
+  font-weight: 500;
+  max-width: 550px;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 16px;
+}
+
+.qw__btn {
+  margin-top: 32px;
+}
+
+/* STEPS SECTION */
+
+.step__description__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.steps__img__left {
+  width: 55%;
+}
+
+.steps__img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.steps__description__right {
+  width: 45%;
 }
