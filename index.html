@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="index.js"></script>
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -22,26 +23,26 @@
             <div class="logo__text">Treact</div>
           </div>
           <ul class="nav__links">
-            <li><a href="" class="nav__link"></a>About</li>
-            <li><a href="" class="nav__link"></a>Blog</li>
-            <li><a href="" class="nav__link"></a>Pricing</li>
-            <li><a href="" class="nav__link"></a>Contact Us</li>
-            <li><a href="" class="nav__link--sign-up"></a>Log In</li>
-            <li><a href="" class="nav__link--primary">Sign Up</a></li>
+            <li><a href="" class="nav__link">About</a></li>
+            <li><a href="" class="nav__link">Blog</a></li>
+            <li><a href="" class="nav__link">Pricing</a></li>
+            <li><a href="" class="nav__link">Contact Us</a></li>
+            <li><a href="" class="nav__link--log-in">Log In</a></li>
+            <li><a href="" class="nav__link--primary btn__primary">Sign Up</a></li>
           </ul>
 
           <!--MOBILE NAV STARTS HERE-->
 
-          <button class="burger__btn"><img src="./assets/Menu.svg" alt=""></button>
+          <button class="burger__btn" onclick="openMenu()"><img class="burger__img" src="./assets/Menu.svg" alt=""></button>
           <div class="burger__backdrop--menu">
-            <button><img src="./assets/Cross.svg" alt=""></button>
-            <ul>
-              <li class="backdrop__menu--list"><a class="menu--link" href="">About</a></li>
-              <li class="backdrop__menu--list"><a class="menu--link" href="">Blog</a></li>
-              <li class="backdrop__menu--list"><a class="menu--link" href="">Pricing</a></li>
-              <li class="backdrop__menu--list"><a class="menu--link" href="">Contact Us</a></li>
-              <li class="backdrop__menu--list"><a class="menu--link" href="">Log In</a></li>
-              <li class="backdrop__menu--list nav__link--primary"><a class="menu--link" href="">Sign Uo</a></li>
+            <button class="burger__btn burger__btn--close" onclick="closeMenu()"><img class="burger__img" src="./assets/Cross.svg" alt=""></button>
+            <ul class="menu__list">
+              <li class="backdrop__menu--list no-drop"><a class="menu--link no-drop" href="">About</a></li>
+              <li class="backdrop__menu--list no-drop"><a class="menu--link no-drop" href="">Blog</a></li>
+              <li class="backdrop__menu--list no-drop"><a class="menu--link no-drop" href="">Pricing</a></li>
+              <li class="backdrop__menu--list no-drop"><a class="menu--link no-drop" href="">Contact Us</a></li>
+              <li class="backdrop__menu--list no-drop"><a class="menu--link no-drop" href="">Log In</a></li>
+              <li class="backdrop__menu--list burger__link--primary no-drop"><a class="burger__menu--link" href="">Sign Up</a></li>
             </ul>
           </div>
         </div>
@@ -69,7 +70,7 @@
                   placeholder="Your E-mail Address"
                   class="hero__email--input"
                 />
-                <button class="cta__btn">Get Started</button>
+                <button class="cta__btn btn__primary">Get Started</button>
               </div>
               <div class="mobile__hero__cta">
                 <input
@@ -173,7 +174,7 @@
                             <h2 class="qw__description--headline">Designed & Developed by <span class="text__purple">Professionals.</span></h2>
                             <p class="qw__description--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
-                            <button class="cta__btn qw__btn">Learn More</button>
+                            <button class="cta__btn qw__btn btn__primary">Learn More</button>
                         </div>
                         <div class="qw__img-right">
                             <figure>
@@ -261,7 +262,7 @@
                       </div>
                     </div>
                   </div>
-                  <button class="cta__btn qw__btn">Learn More</button>
+                  <button class="cta__btn qw__btn btn__primary">Learn More</button>
               </div>
                 <div class="values__img-right">
                   <figure>
@@ -412,15 +413,16 @@
      <div class="container">
       <div class="row">
         <div class="cta__box">
-          <div class="cta__box--headline">
-            <h5>Developers all over the world are happily using Treact.</h5>
+          <div class="cta__wrapper">
+            <div class="cta__box--headline">
+              <h5>Developers all over the world are happily using Treact.</h5>
+            </div>
+            <div class="cta__box--buttons">
+              <a  href="#pricing"><button class="secondary__cta__btn">Get Started</button></a>
+              <button class="contact__btn">Contact us</button>
+            </div>
           </div>
-          <div class="cta__box--buttons">
-            <button class="secondary__cta__btn"><a  href="">Get Started</a></button>
-            <button class="contact__btn"><a  href="">Contact us</a></button>
-          </div>
-          
-        </div>
+       </div>
       </div>
      </div>
 
@@ -486,9 +488,9 @@
               <p>2022 Treact clone by Quincy McCants</p>
             </div>
             <div class="footer__socials">
-              <span class="footer__social--link"><img class="social__img" src="./assets/Facebook.svg" alt=""></span>
-              <span class="footer__social--link"><img class="social__img" src="./assets/Twitter.svg" alt=""></span>
-              <span class="footer__social--link"><img class="social__img" src="./assets/Youtube.svg" alt=""></span>
+              <span class="footer__social--link no__drop"><img class="social__img no__drop" src="./assets/Facebook.svg" alt=""></span>
+              <span class="footer__social--link no__drop"><img class="social__img no__drop" src="./assets/Twitter.svg" alt=""></span>
+              <span class="footer__social--link no__drop"><img class="social__img no__drop" src="./assets/Youtube.svg" alt=""></span>
             </div>
           </div>
       </div>
